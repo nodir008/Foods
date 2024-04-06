@@ -3,13 +3,15 @@ import InstagramIcon from "@/assets/images/InstagramIcon.vue";
 import TelegramIcon from "@/assets/images/TelegramIcon.vue";
 import PhoneIcon from "@/assets/images/PhoneIcon.vue";
 
+import { carusel1, carusel2, carusel3, carusel4 } from "../../helpers/api/images";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Autoplay } from "swiper/modules";
 import "swiper/css/autoplay";
 
 import "swiper/css";
 
-const photos = ["food1.jpg", "food2.jpg", "food3.jpg", "food4.jpg"];
+// const photos = ["food1.jpg", "food2.jpg", "food3.jpg", "food4.jpg"];
+const photos = [carusel1, carusel2, carusel3, carusel4];
 </script>
 
 <template>
@@ -21,7 +23,7 @@ const photos = ["food1.jpg", "food2.jpg", "food3.jpg", "food4.jpg"];
         :autoplay="true"
       >
         <SwiperSlide v-for="(photo, i) in photos" :key="i">
-          <img class="slide__img" :src="`src/assets/images/${photo}`" alt="" />
+          <img class="slide__img" :src="photo" alt="" />   
         </SwiperSlide>
         <div class="contact__top">
       
