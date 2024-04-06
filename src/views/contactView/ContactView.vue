@@ -29,14 +29,14 @@ const photos = [carusel1, carusel2, carusel3, carusel4];
       
       <h1 class="contact-title">Kontaktlar</h1>
       <div class="contact__links">
-        <a href="https://instagram.com/_kh1kmatof__" class="contact__link">
+        <a target="_blank" href="https://instagram.com/_kh1kmatof__" class="contact__link">
           <span class="contact__link-decor"></span>
           <span class="contact__link-content"
             ><InstagramIcon class="contact__link-icon" />Instagramdan
             Yozish</span
           ></a
         >
-        <a href="https://t.me/kh1kmatof_a" class="contact__link">
+        <a target="_blank" href="https://t.me/kh1kmatof_a" class="contact__link">
           <span class="contact__link-decor2"></span>
           <span class="contact__link-content"
             ><TelegramIcon class="contact__link-icon2" />Telegramdan
@@ -44,9 +44,7 @@ const photos = [carusel1, carusel2, carusel3, carusel4];
           ></a
         >
       </div>
-      <button class="contact-number">
-        <PhoneIcon class="contact-number-icon" />93 772 35 22
-      </button>
+        <a href="tel:+998937723522" class="contact-number"> <PhoneIcon class="contact-number-icon" />93 772 35 22 </a>
     </div>
       </Swiper>
     <div class="container">
@@ -59,10 +57,10 @@ const photos = [carusel1, carusel2, carusel3, carusel4];
           </p>
 
           <div class="contact__bottom-link">
-            <a class="contact__bottom-telegram" href="https://t.me/kh1kmatof_a"
+            <a target="_blank" class="contact__bottom-telegram" href="https://t.me/kh1kmatof_a"
               ><TelegramIcon
             /></a>
-            <a
+            <a target="_blank"
               class="contact__bottom-instagram"
               href="https://instagram.com/_kh1kmatof__"
               ><InstagramIcon

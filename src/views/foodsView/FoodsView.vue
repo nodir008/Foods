@@ -37,6 +37,7 @@ const resetInput = () => {
             </div>
             <div class="foods__card">
                 <Card v-for="item in filteredMeals" :key="item.idMeal" :card="item" :isBtn="true" />
+                <p class="foods__card-text" v-if="filteredMeals.length === 0">Biz siz qidirayotgan narsani topa olmadik</p>
             </div>
         </div>
     </section>
